@@ -24,6 +24,7 @@ def products(request):
     context = {
         'items': Item.objects.all()
     }
+    print(context)
     return render(request, "products.html", context)
 
 
